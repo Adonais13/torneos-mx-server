@@ -352,8 +352,8 @@ app.post('/api/processWithdrawal', authenticateUser, async (req, res) => {
   }
 });
 
-// Arrancar el puerto
+// Arrancar el puerto y enlazar con el host 0.0.0.0 (requerido por Render)
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Servidor API Web3 gratis corriendo en el puerto ${PORT}`);
 });
