@@ -1,0 +1,17 @@
+{
+  "name": "torneos-mx-server",
+  "version": "1.0.0",
+  "description": "Servidor backend de apoyo Web3 para Torneos MX",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.7.0"
+  }
+}
