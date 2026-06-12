@@ -15,8 +15,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Inicializar Firebase Admin
+// Render ejecuta el comando de inicio desde el directorio del repositorio
 const serviceAccount = JSON.parse(
-  readFileSync(join(__dirname, 'serviceAccountKey.json'), 'utf8')
+  readFileSync('./serviceAccountKey.json', 'utf8')
 );
 
 admin.initializeApp({
